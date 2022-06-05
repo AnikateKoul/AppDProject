@@ -4,24 +4,7 @@
             "outputFile": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ky\\values-ky.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\126d3351781bfc954d3de967b63185a1\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-ky\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "153",
-                        "endOffsets": "348"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1042",
-                        "endColumns": "157",
-                        "endOffsets": "1195"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\d3a78be849e49d981c1fec54df7b0e20\\transformed\\jetified-play-services-base-18.0.1\\res\\values-ky\\values.xml",
+                    "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\102ab12e4dc4f0c52433ed88d131a4cd\\transformed\\jetified-play-services-base-18.0.1\\res\\values-ky\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\b7f1468b1b190405610154aea2660b23\\transformed\\core-1.6.0\\res\\values-ky\\values-ky.xml",
+                    "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\d39415ecd0d8a2ca161f41f070c1b014\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-ky\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "153",
+                        "endOffsets": "348"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1042",
+                        "endColumns": "157",
+                        "endOffsets": "1195"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\ef67ab19e9fb313f7389e8c1cc364ddf\\transformed\\core-1.6.0\\res\\values-ky\\values-ky.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
