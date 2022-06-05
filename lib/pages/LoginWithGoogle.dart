@@ -15,6 +15,9 @@ class LoginWithGoogle extends StatefulWidget {
 class _LoginWithGoogleState extends State<LoginWithGoogle> {
   String? userEmail = "";
   String? userImageURL;
+  String? userName = "Login";
+  bool signedOut = true;
+  bool signedIn = false;
 
   @override
   Widget build(BuildContext context) {
@@ -25,22 +28,43 @@ class _LoginWithGoogleState extends State<LoginWithGoogle> {
           size: 100,
         );
       } else {
-        return Image.network(userImageURL!, width: 100, height: 100);
+        return CircleAvatar(backgroundImage: NetworkImage(userImageURL!), radius: 50,);
+      }
+    }
+    showFlutterToast() {
+      if(!signedOut) {
+        Fluttertoast.showToast(
+          msg: "Signed out successfully",
+          toastLength: Toast.LENGTH_SHORT,
+        );
+        setState(() {
+          signedOut = true;
+          signedIn = false;
+        });
       }
     }
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("AppD"),
+        title: const Text("Agri Tech"),
         centerTitle: true,
         actions: [
-          ElevatedButton(
-              onPressed: () async {
+          TextButton(
+            onPressed: () async {
+              if(!signedIn) {
                 await signInWithGoogle();
-                setState(() {});
+                setState(() {
+                  signedOut = false;
+                  signedIn = true;
+                });
                 Navigator.pushNamed(context, '/homepage');
-              },
-              child: const Text("Login")),
+              }
+            },
+            child: Text(
+              userName!,
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
         ],
       ),
       body: Column(
@@ -69,11 +93,9 @@ class _LoginWithGoogleState extends State<LoginWithGoogle> {
                 await FirebaseAuth.instance.signOut();
                 userEmail = "";
                 userImageURL = null;
+                userName = "Login";
                 returnProfileImage();
-                Fluttertoast.showToast(
-                  msg: "Signed out successfully",
-                  toastLength: Toast.LENGTH_SHORT,
-                );
+                showFlutterToast();
                 await GoogleSignIn().signOut();
                 setState(() {});
               },
@@ -98,7 +120,11 @@ class _LoginWithGoogleState extends State<LoginWithGoogle> {
     );
     userEmail = googleUser?.email;
     userImageURL = googleUser?.photoUrl;
-    print(userImageURL);
+    // print(userImageURL);
+    setState(() {
+      userName = googleUser?.displayName;
+      print("Hello World");
+    });
 
     // Once signed in, return the UserCredential
     return await FirebaseAuth.instance.signInWithCredential(credential);

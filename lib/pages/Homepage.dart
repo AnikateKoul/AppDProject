@@ -13,7 +13,7 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("AppD"),
+        title: const Text("Agri Tech"),
         actions: const[
             Icon(Icons.account_circle),
         ],
