@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sign_in_with_google/pages/navigation_drawer.dart';
+import 'package:sign_in_with_google/pages/datashare.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  late DataShare data;
+  @override
   Widget build(BuildContext context) {
+    data = ModalRoute.of(context)!.settings.arguments as DataShare;
     return Scaffold(
-      drawer: const NavigationDrawerWidget(),
+      drawer: NavigationDrawerWidget(data: data,),
       appBar: buildAppBar(),
       body: Container(
         height: 300,
@@ -33,6 +41,8 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
+}
+
 
   AppBar buildAppBar() {
     return AppBar(
@@ -58,7 +68,7 @@ class HomeScreen extends StatelessWidget {
       ],
     );
   }
-}
+
 
 class InfoCard extends StatelessWidget {
   final String title;

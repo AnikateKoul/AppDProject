@@ -6,7 +6,11 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sign_in_with_google/pages/homepage.dart';
 import 'package:bordered_text/bordered_text.dart';
 import 'package:sign_in_with_google/pages/homepage.dart';
+import 'package:sign_in_with_google/pages/datashare.dart';
 
+String? userEmail = "";
+String? userImageURL;
+String? userName = "Login";
 class SignInWithG extends StatefulWidget {
   const SignInWithG({Key? key}) : super(key: key);
 
@@ -15,9 +19,7 @@ class SignInWithG extends StatefulWidget {
 }
 
 class _SignInState extends State<SignInWithG> {
-    String? userEmail = "";
-  String? userImageURL;
-  String? userName = "Login";
+
   bool signedOut = true;
   bool signedIn = false;
   @override
@@ -82,7 +84,8 @@ class _SignInState extends State<SignInWithG> {
                   signedOut = false;
                   signedIn = true;
                 });
-                Navigator.pushReplacementNamed(context, '/homepage');
+                DataShare data = DataShare(name: userName, email: userEmail, imageURL: userImageURL);
+                Navigator.pushReplacementNamed(context, '/homepage', arguments: data);
               }
             },
             style: ButtonStyle(
