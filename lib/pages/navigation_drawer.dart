@@ -67,8 +67,11 @@ class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
             height: 18,
           ),
           buildMenuItem(
-            text: 'People',
-            icon: Icons.people,
+            text: 'Todo List',
+            icon: Icons.checklist_rounded,
+            onClicked: () {
+              Navigator.pushReplacementNamed(context, '/todo');
+            }
           ),
           const SizedBox(
             height: 18,

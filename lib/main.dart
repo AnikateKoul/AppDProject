@@ -7,6 +7,7 @@ import 'pages/homepage.dart';
 import 'package:bordered_text/bordered_text.dart';
 import 'pages/SignIn.dart';
 import 'pages/home_screen.dart';
+import 'pages/todo_list.dart';
 
 
 Future <void> main() async {
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login' : (context) => const SignInWithG(),
         '/homepage' : (context) => const HomeScreen(),
+        '/todo' : (context) =>  TodoList(),
       },
       home: const SignInWithG(),
     );
