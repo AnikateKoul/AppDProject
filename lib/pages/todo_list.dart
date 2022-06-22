@@ -157,7 +157,7 @@ class _TodoListState extends State<TodoList> {
                     ),
                     autofocus: true,
                     decoration: const InputDecoration(
-                      hintText: "eg. Water the crops",
+                      hintText: "eg. Water the plants",
                       hintStyle: TextStyle(color: Colors.white70),
                       border: InputBorder.none,
                     ),

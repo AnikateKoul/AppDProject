@@ -176,6 +176,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "http",
+      "rootUri": "file:///C:/Users/anikate%20koul/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/http-0.13.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///C:/Users/anikate%20koul/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/http_parser-4.0.1",
       "packageUri": "lib/",
@@ -320,7 +326,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-06-12T06:58:19.501489Z",
+  "generated": "2022-06-22T11:33:27.484516Z",
   "generator": "pub",
   "generatorVersion": "2.17.1"
 }

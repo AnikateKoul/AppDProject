@@ -70,13 +70,19 @@ class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
             text: 'Todo List',
             icon: Icons.checklist_rounded,
             onClicked: () {
-              Navigator.pushReplacementNamed(context, '/todo');
+              Navigator.pushNamed(context, '/todo');
             }
           ),
           const SizedBox(
             height: 18,
           ),
-          buildMenuItem(text: 'Favourites', icon: Icons.favorite_border),
+          buildMenuItem(
+              text: 'Weather Report',
+              icon: Icons.favorite_border,
+              onClicked: () {
+                Navigator.pushNamed(context, '/weather');
+              }
+          ),
           const SizedBox(
             height: 18,
           ),

@@ -8,6 +8,7 @@ import 'package:bordered_text/bordered_text.dart';
 import 'pages/SignIn.dart';
 import 'pages/home_screen.dart';
 import 'pages/todo_list.dart';
+import 'package:sign_in_with_google/pages/weather_report.dart';
 
 
 Future <void> main() async {
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         '/login' : (context) => const SignInWithG(),
         '/homepage' : (context) => const HomeScreen(),
         '/todo' : (context) =>  TodoList(),
+        '/weather' : (context) => const WeatherReport(),
       },
       home: const SignInWithG(),
     );
