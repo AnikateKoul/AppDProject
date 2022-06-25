@@ -9,7 +9,7 @@ import 'pages/SignIn.dart';
 import 'pages/home_screen.dart';
 import 'pages/todo_list.dart';
 import 'package:sign_in_with_google/pages/weather_report.dart';
-
+import 'package:splash_screen_view/SplashScreenView.dart';
 
 Future <void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +22,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    Widget example1 = SplashScreenView(
+      navigateRoute: const SignInWithG(),
+      duration: 3000,
+      text: "AGRI TECH",
+      textType: TextType.TyperAnimatedText,
+      textStyle: const TextStyle(
+          color: Colors.lime,
+          fontSize: 50.0,
+          fontFamily: 'Roboto'
+      ),
+      backgroundColor: Colors.white,
+    );
+
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
@@ -30,7 +45,7 @@ class MyApp extends StatelessWidget {
         '/todo' : (context) =>  TodoList(),
         '/weather' : (context) => const WeatherReport(),
       },
-      home: const SignInWithG(),
+      home: example1,
     );
   }
 }
