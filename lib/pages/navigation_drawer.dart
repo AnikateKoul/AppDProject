@@ -78,7 +78,7 @@ class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
           ),
           buildMenuItem(
               text: 'Weather Report',
-              icon: Icons.favorite_border,
+              icon: Icons.sunny_snowing,
               onClicked: () {
                 Navigator.pushNamed(context, '/weather');
               }

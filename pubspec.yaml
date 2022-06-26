@@ -92,6 +92,19 @@ flutter:
       fonts:
         - asset: fonts/RobotoCondensed-Light.ttf
 
+    - family: Roboto-Regular
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+
+    - family: Roboto-Black
+      fonts:
+        - asset: fonts/Roboto-Black.ttf
+
+    - family: Roboto-Light
+      fonts:
+        - asset: fonts/RobotoCondensed-Light.ttf
+
+
 
   #   - family: Trajan Pro
   #     fonts:
