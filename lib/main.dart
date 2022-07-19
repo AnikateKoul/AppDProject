@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
       navigateRoute: const SignInWithG(),
       // navigateRoute: user != null? const HomeScreen() : const SignInWithG(),
       duration: 3000,
-      text: "AGRI TECH",
+      text: "AGRICO",
       textType: TextType.TyperAnimatedText,
       textStyle: const TextStyle(
           color: Colors.lime,
