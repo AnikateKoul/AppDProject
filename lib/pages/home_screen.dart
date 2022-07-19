@@ -117,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // data = ModalRoute.of(context)!.settings.arguments as DataShare;
+    data = ModalRoute.of(context)!.settings.arguments as DataShare;
     return Scaffold(
       drawer: NavigationDrawerWidget(data: data,),
       appBar: buildAppBar(),
@@ -194,7 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
       // ),
       floatingActionButton: Container(
         alignment: Alignment.bottomCenter,
-        padding: EdgeInsets.only(bottom: 250),
+        padding: EdgeInsets.only(bottom: 250, left: 30),
         child: ElevatedButton(
             onPressed: () {
               getSensorData();

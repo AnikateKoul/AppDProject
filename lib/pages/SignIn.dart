@@ -20,8 +20,22 @@ class SignInWithG extends StatefulWidget {
 
 class _SignInState extends State<SignInWithG> {
 
+  User? user = FirebaseAuth.instance.currentUser;
   bool signedOut = true;
   bool signedIn = false;
+  @override
+  void initState() {
+    if(user != null) {
+      userEmail = user?.email;
+      userName = user?.displayName;
+      userImageURL = user?.photoURL;
+      DataShare data = DataShare(name: userName, email: userEmail, imageURL: userImageURL);
+
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        Navigator.pushReplacementNamed(context, '/homepage', arguments: data);
+      });
+    }
+  }
   @override
   Widget build(BuildContext context) {
       showFlutterToast() {
