@@ -10,6 +10,7 @@ import 'pages/home_screen.dart';
 import 'pages/todo_list.dart';
 import 'package:sign_in_with_google/pages/weather_report.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
+import 'package:sign_in_with_google/pages/googleSheetsData.dart';
 
 Future <void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         '/homepage' : (context) => const HomeScreen(),
         '/todo' : (context) =>  TodoList(),
         '/weather' : (context) => const WeatherReport(),
+        '/api' : (context) => const GoogleSheetsData(),
       },
       home: example1,
     );

@@ -140,11 +140,11 @@ class _SignInState extends State<SignInWithG> {
         accessToken: googleAuth?.accessToken,
         idToken: googleAuth?.idToken,
       );
-      userEmail = googleUser?.email;
-      userImageURL = googleUser?.photoUrl;
+      userEmail = googleUser?.email; // not necessary
+      userImageURL = googleUser?.photoUrl; // not necessary
       // print(userImageURL);
       setState(() {
-        userName = googleUser?.displayName;
+        userName = googleUser?.displayName; //not necessary
         print("Hello World");
       });
 

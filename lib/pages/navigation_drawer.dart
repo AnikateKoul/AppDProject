@@ -86,7 +86,12 @@ class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
           const SizedBox(
             height: 18,
           ),
-          buildMenuItem(text: 'Workflow', icon: Icons.workspaces_outline),
+          buildMenuItem(
+              text: 'Workflow',
+              icon: Icons.workspaces_outline,
+          onClicked: () {
+                Navigator.pushNamed(context, '/api');
+          }),
           const SizedBox(
             height: 18,
           ),
