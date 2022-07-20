@@ -1,50 +1,50 @@
 [
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_full_open_on_phone.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\102ab12e4dc4f0c52433ed88d131a4cd\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/102ab12e4dc4f0c52433ed88d131a4cd/transformed/jetified-play-services-base-18.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\102ab12e4dc4f0c52433ed88d131a4cd\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/102ab12e4dc4f0c52433ed88d131a4cd/transformed/jetified-play-services-base-18.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\102ab12e4dc4f0c52433ed88d131a4cd\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/googleg_standard_color_18.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/102ab12e4dc4f0c52433ed88d131a4cd/transformed/jetified-play-services-base-18.0.1/res/drawable-xhdpi-v4/googleg_standard_color_18.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\ef67ab19e9fb313f7389e8c1cc364ddf\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/102ab12e4dc4f0c52433ed88d131a4cd/transformed/jetified-play-services-base-18.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\ef67ab19e9fb313f7389e8c1cc364ddf\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/ef67ab19e9fb313f7389e8c1cc364ddf/transformed/core-1.6.0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\ef67ab19e9fb313f7389e8c1cc364ddf\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/googleg_disabled_color_18.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/102ab12e4dc4f0c52433ed88d131a4cd/transformed/jetified-play-services-base-18.0.1/res/drawable-xhdpi-v4/googleg_disabled_color_18.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\ef67ab19e9fb313f7389e8c1cc364ddf\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/ef67ab19e9fb313f7389e8c1cc364ddf/transformed/core-1.6.0/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\ef67ab19e9fb313f7389e8c1cc364ddf\\transformed\\core-1.6.0\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal.9.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/ef67ab19e9fb313f7389e8c1cc364ddf/transformed/core-1.6.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\googleg_disabled_color_18.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\102ab12e4dc4f0c52433ed88d131a4cd\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\googleg_disabled_color_18.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/common_full_open_on_phone.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/102ab12e4dc4f0c52433ed88d131a4cd/transformed/jetified-play-services-base-18.0.1/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\102ab12e4dc4f0c52433ed88d131a4cd\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/102ab12e4dc4f0c52433ed88d131a4cd/transformed/jetified-play-services-base-18.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\102ab12e4dc4f0c52433ed88d131a4cd\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/ef67ab19e9fb313f7389e8c1cc364ddf/transformed/core-1.6.0/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\googleg_standard_color_18.png",
-        "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\102ab12e4dc4f0c52433ed88d131a4cd\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/google_sign_in_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/ef67ab19e9fb313f7389e8c1cc364ddf/transformed/core-1.6.0/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
     }
 ]

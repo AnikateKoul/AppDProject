@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/geolocator_android/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/3c82baea666e4d5b35970565792c0dd3/transformed/jetified-play-services-base-17.0.0/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/geolocator_android/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/3c82baea666e4d5b35970565792c0dd3/transformed/jetified-play-services-base-17.0.0/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/geolocator_android/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/3c82baea666e4d5b35970565792c0dd3/transformed/jetified-play-services-base-17.0.0/res/color/common_google_signin_btn_text_dark.xml"
+    }
+]

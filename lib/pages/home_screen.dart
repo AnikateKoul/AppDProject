@@ -232,7 +232,7 @@ class _HomeScreenState extends State<HomeScreen> {
       iconTheme: const IconThemeData(color: Colors.black),
       backgroundColor: Colors.white,
       title: const Text(
-        'AGRI TECH',
+        'AGRICO',
         style: TextStyle(
           color: Colors.black,
           letterSpacing: 2.0,

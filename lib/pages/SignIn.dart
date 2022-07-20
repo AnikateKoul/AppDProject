@@ -74,7 +74,7 @@ class _SignInState extends State<SignInWithG> {
       const TextCard(
         paddingValue: 150.0,
         strokeWid: 4.0,
-        title: 'AGRI TECH',
+        title: 'AGRICO',
         titleLetterSpacing: 5.0,
         titleFontSize: 50,
         titleFontWeight: FontWeight.bold,

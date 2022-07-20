@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/firebase_core/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/ef67ab19e9fb313f7389e8c1cc364ddf/transformed/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/firebase_core/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/ef67ab19e9fb313f7389e8c1cc364ddf/transformed/core-1.6.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/firebase_core/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/ef67ab19e9fb313f7389e8c1cc364ddf/transformed/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/sachin/StudioProjects/AppDProject2/build/firebase_core/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/Users/sachin/.gradle/caches/transforms-3/ef67ab19e9fb313f7389e8c1cc364ddf/transformed/core-1.6.0/res/drawable/notification_icon_background.xml"
+    }
+]
