@@ -1,5 +1,5 @@
 android.content.res.Resources#getIdentifier present: true
-Web content present: false
+Web content present: true
 Referenced Strings:
   Ȉ
   Ț
@@ -95,6 +95,7 @@ Referenced Strings:
   ACTION_ARGUMENT_SELECTION_START_INT
   ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE
   ACTIVITY_MISSING
+  ACTIVITY_NOT_FOUND
   ADD
   ADDED
   ADMIN_ONLY_OPERATION
@@ -913,6 +914,7 @@ Referenced Strings:
   NOT_IN_STACK
   NOT_LOGGED_IN
   NOT_VERIFIED
+  NO_ACTIVITY
   NO_CHANGE
   NO_CURRENT_USER
   NO_DECISION
@@ -1497,6 +1499,8 @@ Referenced Strings:
   UidVerifier
   Unknown
   Update
+  UrlLauncher
+  UrlLauncherPlugin
   UserCancel
   UsernameUnavailable
   V:
@@ -1824,6 +1828,7 @@ Referenced Strings:
   callbackInterface
   callbackWrapper
   canHandleCodeInApp
+  canLaunch
   cancel
   cancellation
   cancellationListener
@@ -1861,6 +1866,7 @@ Referenced Strings:
   clientTransportFactoryBuilder
   client_name
   clipboard
+  closeWebView
   closed
   cn
   cn.google
@@ -1873,6 +1879,7 @@ Referenced Strings:
   collectionId_
   collection_parents
   com.android.browser.application_id
+  com.android.browser.headers
   com.android.org.conscrypt.OpenSSLProv...
   com.android.org.conscrypt.OpenSSLSock...
   com.android.vending
@@ -2201,7 +2208,9 @@ Referenced Strings:
   emulator/auth/handler
   en
   enableDeltaModel
+  enableDomStorage
   enableIMEPersonalizedLearning
+  enableJavaScript
   enableSuggestions
   enableWakeLock
   enableWifiLock
@@ -2686,6 +2695,7 @@ Referenced Strings:
   lastSignInTimestamp
   latitude
   latitude_
+  launch
   layout_inflater
   left
   length
@@ -2982,6 +2992,7 @@ Referenced Strings:
   plugins.flutter.io/firebase_firestore...
   plugins.flutter.io/firebase_firestore...
   plugins.flutter.io/google_sign_in_and...
+  plugins.flutter.io/url_launcher_android
   point
   pokeByte
   pokeByteArray
@@ -3451,6 +3462,7 @@ Referenced Strings:
   updateTime_
   updateTransforms_
   url
+  useWebView
   user
   userId
   userInfos
@@ -3709,6 +3721,7 @@ Marking id:icon_only:2131034178 used because its prefix matches string pool cons
 Marking id:auto:2131034155 used because its prefix matches string pool constant auto
 Marking string:default_web_client_id:2131361810 used because its prefix matches string pool constant default_web_client_id
 Marking attr:keylines:2130771992 used because its prefix matches string pool constant key
+Marking drawable:launch_background:2130968598 used because its prefix matches string pool constant launch
 Marking attr:queryPatterns:2130772002 used because its prefix matches string pool constant query
 Resource Reference Graph:
 color:common_google_signin_btn_text_dark:2130837510 => [color:common_google_signin_btn_text_dark_disabled:2130837512, color:common_google_signin_btn_text_dark_pressed:2130837514, color:common_google_signin_btn_text_dark_focused:2130837513, color:common_google_signin_btn_text_dark_default:2130837511]
@@ -3787,6 +3800,7 @@ attr:activityAction:2130771968,
    dimen:notification_top_pad_large_text:2130903063,
    drawable:common_full_open_on_phone:2130968576,
    drawable:corner:2130968595,
+   drawable:launch_background:2130968598,
    drawable:notification_action_background:2130968599,
    drawable:notification_bg:2130968600,
    drawable:notification_bg_low:2130968601,

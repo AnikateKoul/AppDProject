@@ -1,11 +1,11 @@
 # compiler: R8
 # compiler_version: 2.1.86
 # min_api: 21
-# pg_map_id: dda5935
+# pg_map_id: 5c89e4b
 # common_typos_disable
 $$ServiceLoaderMethods -> a:
-    java.util.Iterator $load$18506() -> a
-    java.util.Iterator $load$19188() -> b
+    java.util.Iterator $load$18545() -> a
+    java.util.Iterator $load$19227() -> b
 $r8$backportedMethods$utility$Boolean$1$hashCode -> b:
     int hashCode(boolean) -> a
 $r8$backportedMethods$utility$Long$1$hashCode -> c:
@@ -20462,8 +20462,8 @@ io.flutter.embedding.engine.mutatorsstack.FlutterMutatorView -> io.flutter.embed
     void readyToDisplay(io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack,int,int,int,int) -> a
     void unsetOnDescendantFocusChangeListener() -> b
 io.flutter.embedding.engine.mutatorsstack.FlutterMutatorView$1 -> io.flutter.embedding.engine.mutatorsstack.a$a:
-    android.view.View$OnFocusChangeListener val$userFocusListener -> a
-    android.view.View val$mutatorView -> b
+    android.view.View$OnFocusChangeListener val$userFocusListener -> f
+    android.view.View val$mutatorView -> g
 io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$FlutterMutator -> io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$a:
     android.graphics.Matrix matrix -> a
     android.graphics.Matrix getMatrix() -> a
@@ -21468,8 +21468,8 @@ io.flutter.plugin.platform.PlatformViewWrapper$1 -> f.a.c.d.j$a:
     io.flutter.plugin.platform.PlatformViewWrapper this$0 -> a
     void onFrameConsumed() -> a
 io.flutter.plugin.platform.PlatformViewWrapper$2 -> f.a.c.d.j$b:
-    io.flutter.plugin.platform.PlatformViewWrapper this$0 -> b
-    android.view.View$OnFocusChangeListener val$userFocusListener -> a
+    android.view.View$OnFocusChangeListener val$userFocusListener -> f
+    io.flutter.plugin.platform.PlatformViewWrapper this$0 -> g
 io.flutter.plugin.platform.PlatformViewsAccessibilityDelegate -> f.a.c.d.k:
     void detachAccessibilityBridge() -> a
     void attachAccessibilityBridge(io.flutter.view.AccessibilityBridge) -> b
@@ -22226,6 +22226,56 @@ io.flutter.plugins.googlesignin.GoogleSignInWrapper -> io.flutter.plugins.a.d:
     com.google.android.gms.auth.api.signin.GoogleSignInAccount getLastSignedInAccount(android.content.Context) -> a
     boolean hasPermissions(com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.common.api.Scope) -> b
     void requestPermissions(android.app.Activity,int,com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.common.api.Scope[]) -> c
+io.flutter.plugins.urllauncher.MethodCallHandlerImpl -> io.flutter.plugins.urllauncher.a:
+    io.flutter.plugins.urllauncher.UrlLauncher urlLauncher -> a
+    io.flutter.plugin.common.MethodChannel channel -> b
+    android.os.Bundle extractBundle(java.util.Map) -> a
+    void onCanLaunch(io.flutter.plugin.common.MethodChannel$Result,java.lang.String) -> b
+    void onCloseWebView(io.flutter.plugin.common.MethodChannel$Result) -> c
+    void onLaunch(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result,java.lang.String) -> d
+    void startListening(io.flutter.plugin.common.BinaryMessenger) -> e
+    void stopListening() -> f
+    void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> g
+io.flutter.plugins.urllauncher.UrlLauncher -> io.flutter.plugins.urllauncher.b:
+    android.content.Context applicationContext -> a
+    android.app.Activity activity -> b
+    boolean canLaunch(java.lang.String) -> a
+    void closeWebView() -> b
+    io.flutter.plugins.urllauncher.UrlLauncher$LaunchStatus launch(java.lang.String,android.os.Bundle,boolean,boolean,boolean) -> c
+    void setActivity(android.app.Activity) -> d
+io.flutter.plugins.urllauncher.UrlLauncher$LaunchStatus -> io.flutter.plugins.urllauncher.b$a:
+    io.flutter.plugins.urllauncher.UrlLauncher$LaunchStatus[] $VALUES -> i
+    io.flutter.plugins.urllauncher.UrlLauncher$LaunchStatus ACTIVITY_NOT_FOUND -> h
+    io.flutter.plugins.urllauncher.UrlLauncher$LaunchStatus OK -> f
+    io.flutter.plugins.urllauncher.UrlLauncher$LaunchStatus NO_ACTIVITY -> g
+io.flutter.plugins.urllauncher.UrlLauncherPlugin -> io.flutter.plugins.urllauncher.c:
+    io.flutter.plugins.urllauncher.MethodCallHandlerImpl methodCallHandler -> a
+    io.flutter.plugins.urllauncher.UrlLauncher urlLauncher -> b
+    void onAttachedToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> a
+    void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> b
+    void onDetachedFromActivity() -> c
+    void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> d
+    void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> e
+    void onDetachedFromActivityForConfigChanges() -> f
+io.flutter.plugins.urllauncher.WebViewActivity -> io.flutter.plugins.urllauncher.WebViewActivity:
+    java.lang.String URL_EXTRA -> k
+    android.webkit.WebView webview -> h
+    java.lang.String ACTION_CLOSE -> j
+    java.lang.String ENABLE_DOM_EXTRA -> m
+    java.lang.String ENABLE_JS_EXTRA -> l
+    android.content.BroadcastReceiver broadcastReceiver -> f
+    android.webkit.WebViewClient webViewClient -> g
+    android.content.IntentFilter closeIntentFilter -> i
+    android.webkit.WebView access$000(io.flutter.plugins.urllauncher.WebViewActivity) -> a
+    android.content.Intent createIntent(android.content.Context,java.lang.String,boolean,boolean,android.os.Bundle) -> b
+    java.util.Map extractHeaders(android.os.Bundle) -> c
+io.flutter.plugins.urllauncher.WebViewActivity$1 -> io.flutter.plugins.urllauncher.WebViewActivity$a:
+    io.flutter.plugins.urllauncher.WebViewActivity this$0 -> a
+io.flutter.plugins.urllauncher.WebViewActivity$2 -> io.flutter.plugins.urllauncher.WebViewActivity$b:
+io.flutter.plugins.urllauncher.WebViewActivity$FlutterWebChromeClient -> io.flutter.plugins.urllauncher.WebViewActivity$c:
+    io.flutter.plugins.urllauncher.WebViewActivity this$0 -> a
+io.flutter.plugins.urllauncher.WebViewActivity$FlutterWebChromeClient$1 -> io.flutter.plugins.urllauncher.WebViewActivity$c$a:
+    io.flutter.plugins.urllauncher.WebViewActivity$FlutterWebChromeClient this$1 -> a
 io.flutter.util.PathUtils -> f.a.d.a:
     java.lang.String getCacheDirectory(android.content.Context) -> a
     java.lang.String getDataDirPath(android.content.Context) -> b

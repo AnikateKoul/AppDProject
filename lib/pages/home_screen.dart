@@ -2,14 +2,13 @@ import 'dart:convert';
 
 import 'package:bordered_text/bordered_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sign_in_with_google/pages/navigation_drawer.dart';
 import 'package:sign_in_with_google/pages/datashare.dart';
 import 'package:http/http.dart' as http;
 import 'package:geolocator/geolocator.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-
-import 'home_screen.dart';
+import 'package:confetti/confetti.dart';
 
 class Album {
   int? cloud_pct;
@@ -31,7 +30,6 @@ void getLocation() async {
   // List<Address> addresses = geocoder. getFromLocation(lat, lng, 1);
   lat = position!.latitude;
   lon = position.longitude;
-  print(position);
 }
 
 int? cloud_pct;
@@ -44,7 +42,6 @@ Future<Album> fetchAlbum(double lat, double lon) async {
         'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com',
       });
   cloud_pct = (jsonDecode(response.body)['cloud_pct']);
-  print(jsonDecode(response.body)['cloud_pct']);
 
   if (response.statusCode == 200) {
     // If the server did return a 200 OK response,
@@ -54,7 +51,7 @@ Future<Album> fetchAlbum(double lat, double lon) async {
     // If the server did not return a 200 OK response,
     // then throw an exception.
     return Album.fromJson(jsonDecode(response.body));
-    throw Exception('Failed to load album');
+
   }
 }
 
@@ -101,18 +98,42 @@ class _HomeScreenState extends State<HomeScreen> {
       avg2 = (avg2/1023)*100;
       Avg2 = avg2.toStringAsFixed(2);
       // avg3=(total3/data_list3.length).round();
-      print("$avg1 $avg2\n");
     });
   }
 
-
+  late ConfettiController controllerTopCenter;
 
   @override
   void initState() {
+    super.initState();
     getSensorData();
     getLocation();
     fetchAlbum(lat, lon);
+    initController();
 
+  }
+
+  void initController() {
+    controllerTopCenter =
+        ConfettiController(duration: const Duration(seconds: 1));
+  }
+
+  Align buildConfettiWidget(controller, double blastDirection) {
+    return Align(
+      alignment: Alignment.topCenter,
+      child: ConfettiWidget(
+        maximumSize: Size(30, 30),
+        shouldLoop: false,
+        confettiController: controller,
+        blastDirection: blastDirection,
+        blastDirectionality: BlastDirectionality.directional,
+        maxBlastForce: 20, // set a lower max blast force
+        minBlastForce: 8, // set a lower min blast force
+        emissionFrequency: 1,
+        numberOfParticles: 8, // a lot of particles at once
+        gravity: 1,
+      ),
+    );
   }
 
   @override
@@ -199,6 +220,10 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: () {
               getSensorData();
               getLocation();
+              Fluttertoast.showToast(
+                msg: "Fetching Data",
+                toastLength: Toast.LENGTH_SHORT,
+              );
 
             },
             style: ButtonStyle(
@@ -224,9 +249,6 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-}
-
-
   AppBar buildAppBar() {
     return AppBar(
       iconTheme: const IconThemeData(color: Colors.black),
@@ -245,12 +267,26 @@ class _HomeScreenState extends State<HomeScreen> {
       // ),
       actions: [
         IconButton(
-          onPressed: () {},
-          icon: Image.asset('assets/icons/icons8-customer-48.png'),
+          onPressed: () {
+            Fluttertoast.showToast(
+              msg: "Made By : "
+                  "Anikate Koul\n"
+                  "Sachin Dapkara\n"
+                  "Abhishek Goenka\n"
+                  "Shraddha Gulati",
+              toastLength: Toast.LENGTH_SHORT,
+            );
+            controllerTopCenter.play();
+          },
+          icon: Image.asset('assets/agrico_appicon.png'),
         )
       ],
     );
   }
+}
+
+
+
 
 
 class InfoCard extends StatelessWidget {

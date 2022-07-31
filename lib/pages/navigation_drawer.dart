@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_google/pages/datashare.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class NavigationDrawerWidget extends StatefulWidget {
   // const NavigationDrawerWidget({Key? key}) : super(key: key);
@@ -64,7 +66,7 @@ class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
             ),
           ),
           const SizedBox(
-            height: 18,
+            height: 80,
           ),
           buildMenuItem(
             text: 'Todo List',
@@ -87,15 +89,13 @@ class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
             height: 18,
           ),
           buildMenuItem(
-              text: 'Workflow',
-              icon: Icons.workspaces_outline,
+              text: 'Sensor Data',
+              icon: Icons.sensors_sharp,
           onClicked: () {
-                Navigator.pushNamed(context, '/api');
+                Uri url = Uri.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSI1IN2b7SkkJFB9YpgTsE2yL2vRhOlM1t4Nabsn5CEhsCaVR6FP9sUwhOEgEb8MIqVB7sNepMbU3D4/pubhtml?gid=0&single=true");
+                launchUrl(url);
+                // Navigator.pushNamed(context, '/api');
           }),
-          const SizedBox(
-            height: 18,
-          ),
-          buildMenuItem(text: 'Updates', icon: Icons.update),
           const SizedBox(
             height: 24,
           ),
@@ -103,14 +103,14 @@ class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
             color: Colors.white70,
           ),
           const SizedBox(
-            height: 24,
-          ),
-          buildMenuItem(text: 'Plugins', icon: Icons.account_tree_outlined),
-          const SizedBox(
             height: 18,
           ),
           buildMenuItem(text: 'Sign Out', icon: Icons.logout_rounded,
             onClicked: () async {
+              Fluttertoast.showToast(
+                msg: "Signed Out Successfully",
+                toastLength: Toast.LENGTH_SHORT,
+              );
               await FirebaseAuth.instance.signOut();
               // userEmail = "";
               // userImageURL = null;

@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sachin/StudioProjects/AppDProject2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml",
+            "outputFile": "C:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
             "map": [
                 {
-                    "source": "/Users/sachin/.gradle/caches/transforms-3/102ab12e4dc4f0c52433ed88d131a4cd/transformed/jetified-play-services-base-18.0.1/res/values-zu/values.xml",
+                    "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\d39415ecd0d8a2ca161f41f070c1b014\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-zu\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "127",
+                        "endOffsets": "322"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1112",
+                        "endColumns": "131",
+                        "endOffsets": "1239"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\102ab12e4dc4f0c52433ed88d131a4cd\\transformed\\jetified-play-services-base-18.0.1\\res\\values-zu\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/sachin/.gradle/caches/transforms-3/ef67ab19e9fb313f7389e8c1cc364ddf/transformed/core-1.6.0/res/values-zu/values-zu.xml",
+                    "source": "C:\\Users\\anikate koul\\.gradle\\caches\\transforms-3\\ef67ab19e9fb313f7389e8c1cc364ddf\\transformed\\core-1.6.0\\res\\values-zu\\values-zu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -35,23 +52,6 @@
                         "startOffsets": "2340",
                         "endColumns": "100",
                         "endOffsets": "2436"
-                    }
-                },
-                {
-                    "source": "/Users/sachin/.gradle/caches/transforms-3/d39415ecd0d8a2ca161f41f070c1b014/transformed/jetified-play-services-basement-18.0.0/res/values-zu/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "127",
-                        "endOffsets": "322"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1112",
-                        "endColumns": "131",
-                        "endOffsets": "1239"
                     }
                 }
             ]

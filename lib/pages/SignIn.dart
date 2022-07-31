@@ -1,16 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:sign_in_with_google/pages/homepage.dart';
 import 'package:bordered_text/bordered_text.dart';
-import 'package:sign_in_with_google/pages/homepage.dart';
 import 'package:sign_in_with_google/pages/datashare.dart';
 
 String? userEmail = "";
 String? userImageURL;
 String? userName = "Login";
+
 class SignInWithG extends StatefulWidget {
   const SignInWithG({Key? key}) : super(key: key);
 
@@ -19,36 +17,32 @@ class SignInWithG extends StatefulWidget {
 }
 
 class _SignInState extends State<SignInWithG> {
-
   User? user = FirebaseAuth.instance.currentUser;
   bool signedOut = true;
   bool signedIn = false;
   @override
   void initState() {
-    if(user != null) {
+    super.initState();
+    if (user != null) {
       userEmail = user?.email;
       userName = user?.displayName;
       userImageURL = user?.photoURL;
-      DataShare data = DataShare(name: userName, email: userEmail, imageURL: userImageURL);
+      DataShare data =
+          DataShare(name: userName, email: userEmail, imageURL: userImageURL);
 
       WidgetsBinding.instance.addPostFrameCallback((_) {
         Navigator.pushReplacementNamed(context, '/homepage', arguments: data);
       });
     }
   }
+
   @override
   Widget build(BuildContext context) {
-      showFlutterToast() {
-      if(!signedOut) {
-        Fluttertoast.showToast(
-          msg: "Signed out successfully",
-          toastLength: Toast.LENGTH_SHORT,
-        );
-        setState(() {
-          signedOut = true;
-          signedIn = false;
-        });
-      }
+    if (!signedOut) {
+      setState(() {
+        signedOut = true;
+        signedIn = false;
+      });
     }
     return Scaffold(
         body: Stack(children: [
@@ -92,14 +86,20 @@ class _SignInState extends State<SignInWithG> {
       Center(
         child: ElevatedButton(
             onPressed: () async {
-              if(!signedIn) {
+              if (!signedIn) {
                 await signInWithGoogle();
                 setState(() {
                   signedOut = false;
                   signedIn = true;
                 });
-                DataShare data = DataShare(name: userName, email: userEmail, imageURL: userImageURL);
-                Navigator.pushReplacementNamed(context, '/homepage', arguments: data);
+                DataShare data = DataShare(
+                    name: userName, email: userEmail, imageURL: userImageURL);
+                Navigator.pushReplacementNamed(context, '/homepage',
+                    arguments: data);
+                Fluttertoast.showToast(
+                  msg: "Signed in successfully",
+                  toastLength: Toast.LENGTH_SHORT,
+                );
               }
             },
             style: ButtonStyle(
@@ -122,49 +122,33 @@ class _SignInState extends State<SignInWithG> {
                 ),
               ),
             )),
-
       ),
-          // Center(
-          //   child: ElevatedButton(
-          //       onPressed: () async {
-          //         await FirebaseAuth.instance.signOut();
-          //         userEmail = "";
-          //         userImageURL = null;
-          //         userName = "Login";
-          //         // returnProfileImage();
-          //         showFlutterToast();
-          //         await GoogleSignIn().signOut();
-          //         setState(() {});
-          //       },
-          //       child: const Text("Logout")),
-          // )
-
     ]));
   }
-    Future<UserCredential> signInWithGoogle() async {
-      // Trigger the authentication flow
-      final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
-      // Obtain the auth details from the request
-      final GoogleSignInAuthentication? googleAuth =
-      await googleUser?.authentication;
+  Future<UserCredential> signInWithGoogle() async {
+    // Trigger the authentication flow
+    final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
-      // Create a new credential
-      final credential = GoogleAuthProvider.credential(
-        accessToken: googleAuth?.accessToken,
-        idToken: googleAuth?.idToken,
-      );
-      userEmail = googleUser?.email; // not necessary
-      userImageURL = googleUser?.photoUrl; // not necessary
-      // print(userImageURL);
-      setState(() {
-        userName = googleUser?.displayName; //not necessary
-        print("Hello World");
-      });
+    // Obtain the auth details from the request
+    final GoogleSignInAuthentication? googleAuth =
+        await googleUser?.authentication;
 
-      // Once signed in, return the UserCredential
-      return await FirebaseAuth.instance.signInWithCredential(credential);
-    }
+    // Create a new credential
+    final credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth?.accessToken,
+      idToken: googleAuth?.idToken,
+    );
+    userEmail = googleUser?.email; // not necessary
+    userImageURL = googleUser?.photoUrl; // not necessary
+    // print(userImageURL);
+    setState(() {
+      userName = googleUser?.displayName; //not necessary
+    });
+
+    // Once signed in, return the UserCredential
+    return await FirebaseAuth.instance.signInWithCredential(credential);
+  }
 }
 
 class TextCard extends StatelessWidget {
@@ -208,7 +192,4 @@ class TextCard extends StatelessWidget {
       ),
     );
   }
-
 }
-
-
