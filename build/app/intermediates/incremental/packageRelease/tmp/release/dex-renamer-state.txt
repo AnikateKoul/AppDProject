@@ -1,4 +1,0 @@
-#Thu Jul 21 13:34:02 IST 2022
-base.0=C\:\\Users\\anikate koul\\OneDrive\\Desktop\\sign_in_with_google\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
